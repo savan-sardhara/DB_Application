@@ -29,8 +29,9 @@ public class CRUD extends AppCompatActivity {
         Button del=findViewById(R.id.btndelete);
         Button update=findViewById(R.id.btnupdate);
 
+//using the git hub
 
-
+//insert
         ins.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,6 +42,8 @@ public class CRUD extends AppCompatActivity {
             }
         });
 
+
+ //Display in the table formate
         TableLayout tb=findViewById(R.id.tablaydata);
 
 
@@ -55,7 +58,7 @@ public class CRUD extends AppCompatActivity {
 
                      TextView idtv=new TextView(getApplicationContext());
                      idtv.setText(c.getString(0));
-                     idtv.setPadding(5,5,5,5);
+                     idtv.setPadding(5,5,5,5); // can we use only 1 value ?
                      row.addView(idtv);
 
                      TextView nmtv=new TextView(getApplicationContext());
@@ -73,6 +76,8 @@ public class CRUD extends AppCompatActivity {
             }
         });
 
+
+ //Delete
         del.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -81,6 +86,9 @@ public class CRUD extends AppCompatActivity {
             }
         });
 
+
+
+ //Update The value
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
